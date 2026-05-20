@@ -7,7 +7,33 @@
 .page-style{
     font-family:'Poppins';
     border-radius:15px;
+    padding: 24px;
     margin:50px;
+}
+@media (max-width: 768px) {
+    .page-style {
+        margin: 15px;
+        border-radius: 8px;
+    }
+
+    /* Sections with heavy padding */
+    .pl-5, .pr-5 {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    /* Float-right dates break on small screens */
+    .float-right {
+        float: none !important;
+        display: block;
+        font-size: 13px;
+        color: gray;
+    }
+
+    /* Profile photo section */
+    .profile-photo {
+        height: 120px;
+    }
 }
 .page-style:hover {
     background-color:white;
